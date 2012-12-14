@@ -1,0 +1,80 @@
+
+                                     PADHD
+                         A Presentation Manager Utility
+                     Copyright (c) 1995 by Gary L. Robinson
+                               *** SHAREWARE ***
+                                ver. 1.5 ( 32 bit )
+
+
+/*************************** INSTALLATION ***************************/
+
+   PADHD has no installation program.  It consists of four files - PADHD.EXE,
+PADHD.HLP, WHATS.NEW, and ORDER.FRM.  After you unzip it, copy 
+PADHD.EXE and PADHD.HLP to a utilities directory or where ever you want 
+them to reside.  The file ORDER.FRM is an order form to register PADHD and
+can be easily printed to make registering an easy and almost painless chore.
+The file WHATS.NEW is an ASCII text file that summarizes the new 
+features/changes.
+   Migrate PADHD to the desk top or use a program template to put an icon 
+on the desktop for it.  Or you could run it from the command line to test it.  
+Whatever serves your purpose.  After you run it the first time it will create 
+three other files in the directory where it resides.  The data file that holds
+the info on your notes ( you'll be prompted for a name ),  PADHD.INI is an 
+initiation data file that holds settings and screen coordinates. PADHD.DAT is
+a data file that stores the name of the .PDF files on your search list.  
+   You can run multiple copies of PADHD on your system.  They should be 
+located in different directories or drives.  Every copy will run off of its own
+.ini and .dat files.
+
+/************************* NEW STUFF ver. 2.0 *************************/
+
+1. Partially resizable Edit/View/Add/Search screens.   These windows are redesigned
+   to be partially resizable.  Some of the functions that had previously been available
+   as buttons are NOW on pop-up menus associated with the text areas ( MLE box )
+   of each screen.  Pop-up menus are accessed by putting the mouse pointer on top
+   of the text area and clicking the right mouse button once.
+
+2. Users can now select the fixed length record size of their data files.  Each data
+   file can be set for a fixed length record size between 1-30k.  Each data file can
+   be different - they all do NOT need to have the same fixed length record.  The
+   fixed length record size of a data file CAN also be reset AFTER it is created.
+   For example :  You have a data file RECIPES.PDF and it was created to have
+   5k fixed length records.  You have put 135 records in the data file.  You notice
+   that the largest amount of text in any of those records is ONLY 2.5k.  You can
+   then resize the entire data file to have 3k records - thus saving disk space.
+   You could also resize the data file upwards to any fixed length record size 
+   between 3-30k.  It is similar in conception to a popular OS/2 program called
+   Partition Magic which allows resizing of hard disk partitions.  PadHD allows
+   resizing of its data files and their fixed length record size.
+
+3. Print output will now reflect the Word Wrap state of the record.  If you have
+   word wrap enabled and 'scrunch' the window up real narrow and press the
+   print button the text output will reflect the same line breaks you see on the
+   screen.
+
+4. Ability to set EDIT screen as default 'double click' choice from main list box.
+
+5.  Simple Date/Time stamp for records.
+
+6.  Simple function to Copy/Move records between .PDF files.  ( main screen pop-up )  
+
+7.  Limited font/color support for main screen list box.  ( main screen pop-up )    
+
+8.  Numerous other small bug fixes and design changes.
+
+/************************* ALMOST THE END *************************/
+
+   Registration is a paltry $35.00.  Upon registration you'll receive a postcard with the 
+appropriate code to get rid of the ugly Shareware "About PADHD" screen.  Upgrades 
+or bug fixes will of course be posted on Several BBS's and the Hobbes site on the
+internet.  All current users of course can still use their same code words on this or 
+ANY future updates.  Suggestions for new features or comments may be sent to the 
+address below or posted on the internet ========>  hkypuck@ibm.net    
+                                            Compuserve =====> 76547,503
+
+                             Gary L. Robinson
+                             600 Apt. D. Mumford Dr.
+                             Troy, OH 45373
+
+/**************************** THE END ****************************/
+                             

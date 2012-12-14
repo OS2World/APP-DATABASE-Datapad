@@ -1,0 +1,500 @@
+
+                                     PADHD
+                         A Presentation Manager Utility
+                     Copyright (c) 1994 by Gary L. Robinson
+                               *** SHAREWARE ***
+                                 ver. 1.1 ( 32 bit )
+
+
+  **** BE SURE TO READ THE SPECIAL SECTION ON "BUG FIXES + THINGS" ***
+
+
+WHAT IS PADHD
+   PADHD ver. 1.1 is a "scratch pad" to jot notes in and organize small files into.
+While PADHD is NOT a WORD PROCESSOR It has several features to help make man-
+aging notes a lot easier - such as cut, clear, copy, paste, search, save to ASCII,
+import ASCII file, and an ASCII dump to the printer.  At its simplest it is merely a 
+note pad.  At it's most it is a great note organizer for students, teachers, programmers
+( source code files and examples ), and any one with a lot of information to handle.
+PADHD will keep up to 1000 records, each 29,999 bytes long, per data file.  There
+can be an unlimited number of data files, so the amount that can be stored is un-
+limited.  Each data file will grow and/or shrink as you add or delete records.  Their
+size is not static.  Find notes, source code, or any info when you need it, then copy
+and paste into almost any program to use it!  Pad can save you hours of time search-
+ing your hard drive for files and makes it easy to organize!
+
+INSTALLING PADHD
+   PADHD has no installation program.  It consists of four files - PADHD.EXE ,
+PADHD.DOC, WHATS.NEW, and ORDER.FRM.  After you unzip it, copy PADHD.EXE and 
+PADHD.DOC to a utilities directory or where ever you want them to reside.  If you 
+don't need the doc files, they may be erased but the PADHD.DOC file is used by the 
+Help selection on the Menu Bar.  If you do erase it, you will not be able to call it 
+through using Help.  The file ORDER.FRM is an order form to register PADHD and can 
+be easily printed to make registering an easy and almost painless chore.  The file
+WHATS.NEW is an ASCII text file that summarizes the new features/changes.
+   Migrate PADHD to the desk top or use a program template to put an icon on the
+desktop for it.  Or you could run it from the command line to test it.  Whatever serves
+your purpose.  When you run it for the first time it will ask you to type in the directory
+where the program files will be located at.  If, for instance, you have put PADHD.EXE 
+and PADHD.DOC in the C:\PADHD directory - type in the complete path when prompted.
+Actually, you can type in any VALID path but most people will want the associated data
+and initialization files in the same directory as the program.  If you type in the WRONG
+path and want to change it later, just erase the PADHD.INI and PADHD.DAT files and
+start over again.
+   After you run it the first time it will create three other files in the same directory.  
+PADHD.PDF is the default data file that holds the info on your notes.  PADHD.INI is an 
+initiation data file that holds settings and screen coordinates.  PADHD.DAT is a data 
+file that stores the name of the .PDF files on your search list.  
+   You probably should run only one copy of PADHD on your system.  When you first
+start PADHD and it prompts you for a path - that path is stored in your OS2.INI file.
+Every time you start PADHD it reads your OS2.INI file and retrieves that path.  That is
+where the program looks for the PADHD.DAT and PADHD.INI file.  If you ran another
+copy of PADHD in another directory or drive it would still look to the path in the OS2.INI
+file.  So, if you want to move PADHD from one directory or drive to another be sure
+to erase the 'old' copy AND DON'T COPY THE PADHD.INI AND PADHD.DAT files to the 
+new directory.  The program will create new ones for you. Then when you start it in it's
+new home it will prompt you again for a new path string.
+
+USING PADHD
+   Using PADHD should be rather simple and I hope intuitive.  That's primarily
+why it was written.  Double click on the PADHD icon and after you see the noxious
+shareware screen and you will see the main screen appear.  You are presented with
+a list box which will show a list of your notes and six push buttons that will
+perform various tasks.  Of course, when you first start with PADHD there are not any
+records listed.  The first, obvious, thing to do is to use the Add button and create some
+records or import some ASCII files - either through the menu selection Import File or
+by simply dropping a text file directly on top the MAIN screen list box..
+
+/******************** Controls on Main Screen ***************************/
+
+QUIT   :  Rather obvious function.  It ends the program.
+
+VIEW   :  Strictly for viewing - double clicking on the name of the record in
+           the list box will also activate the View window.  Copy, Search, Export, and
+           Print controls are available in the View Window.
+
+EDIT   :  Edit a note and change it's content.  Notes can be copied or imported
+           from the clip board, imported from an ASCII file, or typed in.  Copy, Paste,
+           Cut, Clear, Print, Search, and Import/Export controls are available in the
+           Edit Window.
+
+ADD    :  Use this to start a new note. Up to 1000 notes per data file.  Copy, Paste,
+           Cut, Clear, and Import controls are available in an Add Window.
+
+SEARCH : Use this to search through the text or name part of the notes for specific
+           words or phrases.  This global search button will search through all records
+           and find any occurrences of your search string.  It can also search through
+           multiple ( up to 25 ) .PDF modules.
+
+DELETE :  Destroy the note and remove it from the data file.
+
+   When you first start the program, of course, you have no notes.  So the first push
+button you'll use is the ADD function. ( alternately you could use the Import File sel-
+ection on the menu bar to directly import ANY size ASCII directly into the .PDF file
+or use direct manipulation and DROP an ASCII file onto the MAIN screen list box )
+When you press the ADD button you'll be presented with the Add Record window.  
+There you can type in the name of the note that will appear in the initial screen's 
+list box.  Then type in the body of the note.  The maximum size for a note is 29999
+characters which includes empty spaces between words.  To the right of the Record 
+Name field will be a read out of the current number of bytes you have left in that 
+record.  Then you have several choices.
+
+/******************** Controls in Add Window ***************************/
+COLORS :  This starts an instance of the system Color Palette which can be used to
+             Drag and Drop colors on the ADD entry box - not the record name entry
+             box.  Hold the CTRL key down while dragging colors to change the TEXT
+             FOREGROUND color.  ONLY SOME colors will work correctly.  Please read 
+             section on BUG FIXES AND THINGS.
+
+FONTS  :  This starts an instance of the system Font Palette which can be used to
+            Drag and Drop fonts on the ADD entry box.  NOT ALL font characteristics
+            are supported.  Please read section on BUG FIXES AND THINGS.
+
+HOME   :  Moves cursor to BEGINNING of record.  ( CTRL + HOME )
+
+END     :  Moves cursor to END of record.  ( CTRL + END )
+
+OK      :  Closes the Add window and saves the record to disk.
+
+CANCEL :  Backs out with out saving or setting anything.
+
+COPY   :  Copies highlighted text to the clip board.
+
+PASTE  :  This button copies whatever is in the clip board and pastes it into the cur-
+            rent record starting at the current cursor position.
+
+CUT     :  This deletes any highlighted text from the record but also copies it to the
+            clip board at the same time.
+
+CLEAR  :  This will delete any highlighted text.
+
+IMPORT FROM FILE  :  Import From File presents the user with an Open Dialog box
+                          which is used to select a TEXT file and import it into the
+                          current record at the current cursor location.  The maximum
+                          size file that can be imported is 29,999 bytes in a new record
+                          or whatever the Bytes Available field to the right of the
+                          Record name field tells you is available.
+
+     After you have saved one or more records then the Edit, View, Search, and Delete
+buttons will be usable.  Below is a list of controls on the Edit and View windows :
+
+/************************* Controls in Edit Window *********************/
+
+COLORS :  This starts an instance of the system Color Palette which can be used to
+             Drag and Drop colors on the EDIT entry box - not the record name entry
+             box.  Hold the CTRL key down while dragging colors to change the TEXT
+             FOREGROUND color.  ONLY SOME colors will work correctly.  Please read 
+             section on BUG FIXES AND THINGS.
+
+FONTS  :  This starts an instance of the system Font Palette which can be used to
+            Drag and Drop fonts on the EDIT entry box.  NOT ALL font characteristics
+            are supported.  Please read section on BUG FIXES AND THINGS.
+
+SAVE NOW  :  Saves current record to disk but does NOT close window.  Located
+                above the Record Name.
+
+HOME   :  Places cursor at the BEGINNING of current record.  Located above Bytes
+            Available field.  ( CTRL + HOME )
+
+END     :  Places cursor at the END of current record.  Located above Bytes Available
+            field.  ( CTRL + END )
+
+OK      :  Closes the Edit window and saves the record to disk.
+
+CANCEL :  Backs out with out saving or setting anything.
+
+COPY   :  Copies highlighted text to the clip board.
+
+PASTE  :  This copies whatever is in the clip board and pastes it into the current
+            record starting at the current cursor position.
+
+CUT     :  This deletes any highlighted text from the record but also copies it to the
+            clip board at the same time.
+
+CLEAR  :  This will delete any highlighted text.
+
+PRINT  :  This will do a straight, no frills, ASCII dump to the printer.  If you need
+            formatted printing, save the record to an ASCII file then load into your fav-
+            orite word processor.
+
+SEARCH + : Press + to initiate a forward search.  You'll be presented with a dialog 
+             entry box to enter a search string.  Press OK to start, Cancel to quit, and 
+             check the case sensitive box if you need that.  The Default is to be non 
+             case sensitive.  The program will find your search string and highlight it.  
+             If It can NOT find it you will hear a musical note.  Continue to press + to 
+             forward search through the record or - to search in reverse.  ALL 
+             SEARCHES START AT CURRENT CURSOR POSITION.  ( F2 )
+
+SEARCH - : Reverse search.  ( F3 )
+
+SEARCH clr : Clears the search string.  After using this button, the next time you press
+               either + or - you will be prompted for a new search string.  ( F4 )
+
+EXPORT TO FILE    :   Export From File presents the user with a dialog entry box.
+                          Type in the FULL path and name of the file you want to save
+                          the current record in.  Press OK or Cancel.
+
+IMPORT FROM FILE  :  Import From File presents the user with an Open Dialog box
+                          which is used to select a TEXT file and import it into the
+                          current record at the position where the cursor is located at.
+                          Maximum size file that can be imported is 29,999 bytes in a
+                          new record or whatever the Bytes Available field to the right
+                          of the Record name field tells you is available.
+
+
+/************************* Controls in View Window *********************/
+
+COLORS :  This starts an instance of the system Color Palette which can be used to
+             Drag and Drop colors on the VIEW entry box - not the record name entry
+             box.  Hold the CTRL key down while dragging colors to change the TEXT
+             FOREGROUND color.  ONLY SOME colors will work correctly.  Please read 
+             section on BUG FIXES AND THINGS.
+
+FONTS  :  This starts an instance of the system Font Palette which can be used to
+            Drag and Drop fonts on the VIEW entry box.  NOT ALL font characteristics
+            are supported.  Please read section on BUG FIXES AND THINGS.
+
+HOME   :  Places cursor at the BEGINNING of current record.  Located above Bytes
+            Available field.  ( CTRL + HOME )
+
+END     :  Places cursor at the END of current record.  Located above Bytes Available
+            field.  ( CTRL + END )
+
+OK      :  Closes the View record window.
+
+COPY   :  Copies highlighted text to the clip board.  Text can be highlighted in the us-
+            ual ways.  Hold down on Shift button and use arrow keys.  Or hold down
+            on mouse button 1 and drag the pointer to highlight the text.
+
+SEARCH + : Press + to initiate a forward search.  You'll be presented with a dialog 
+             entry box to enter a search string.  Press OK to start, Cancel to quit, and 
+             check the case sensitive box if you need that.  The Default is to be non 
+             case sensitive.  The program will find your search string and highlight it.  
+             If It can NOT find it you will hear a musical note.  Continue to press + to 
+             forward search through the record or - to search in reverse.  ALL 
+             SEARCHES START AT CURRENT CURSOR POSITION.  ( F2 )
+
+SEARCH - : Reverse search.  ( F3 )
+
+SEARCH clr : Clears the search string.  After using this button, the next time you press
+               either + or - you will be prompted for a new search string.  ( F4 )
+
+EXPORT TO FILE    :   Export From File presents the user with a dialog entry box.
+                          Type in the FULL path and name of the file you want to save
+                          the current record in.  Press OK or Cancel.
+
+PRINT  :  This will do a straight, no frills, ASCII dump to the printer.  If you need
+            formatted printing, save the record to an ASCII file then load into your fav-
+            orite word processor.
+
+
+/*********************** Global Search Window *************************/
+
+   Global Searches are those searches that are initiated from the search button on the
+main program window - not a search conducted while in an Edit or View Window.
+When you press the search button for a Global search, you will be presented with a
+dialog entry box.  Select either of the two check boxes depending on whether you want
+to search the Name or Text fields of the record and whether you need the search to be
+case sensitive or not.  The Default is to search the Text field of the record and NOT
+be case sensitive.  Enter a search string in the entry field and press OK to begin.
+Search strings must at least be 3 characters long.
+   The program will then start searching, one at a time, through every record you have.
+If you have 1000 records the search may take 2-3 minutes depending on the speed of
+your computer and if what you are looking for is in the last record it looks at.
+   If you have more than one .PDF module designated in your Global Search list it will
+load in all of them one after the other until you cancel the search or it reaches the end.   
+   If it finds a match for your search string it will open that record in a Search ---
+View Record Window and highlight the found string.  You will then be presented with
+several choices :
+
+COLORS :  This starts an instance of the system Color Palette which can be used to
+             Drag and Drop colors on the SEARCH entry box - not the record name entry
+             box.  Hold the CTRL key down while dragging colors to change the TEXT
+             foreground color.  ONLY SOME colors will work correctly.  Please read 
+             section on BUG FIXES AND THINGS.
+
+FONTS  :  This starts an instance of the system Font Palette which can be used to
+            Drag and Drop fonts on the SEARCH entry box.  NOT ALL font characteristics
+            are supported.  Please read section on BUG FIXES AND THINGS.
+
+HOME   :  Places cursor at the BEGINNING of current record.  Located above Bytes
+            Available field.  ( CTRL + HOME )
+
+END     :  Places cursor at the END of current record.  Located above Bytes Available
+            field.  ( CTRL + END )
+
+CANCEL AND RETURN :  
+   CURRENT : Quit the search.  This will close the Search --- View Record window.
+               The currently displayed .PDF module ( file ) will stay loaded.
+               The record will be highlighted in the list box so you can now perform any
+               of the main actions on it. ( Edit, View, Delete )  
+
+   ORIGINAL : Quit the search.  This will close the Search --- View Record window.
+               The original .PDF module ( file ) you started with will be reloaded.
+
+CONTINUE GLOBAL  :  This will close the current window and continue to search
+                         the rest of the records for a match of your search string.  If
+                         another match is found it will open a window and highlight the
+                         string again.  And on and on until it runs out of records and
+                         notifies you that there are no more matches.
+
+CONTINUE LOCAL + : Press + to initiate a forward search.  You'll be presented with a 
+             dialog entry box to enter a search string.  Press OK to start, Cancel to quit,
+             and check the case sensitive box if you need that.  The Default is to be 
+             non case sensitive.  The program will find your search string and highlight 
+             it.  If It can NOT find it you will hear a musical note.  Continue to press +
+             to forward search through the record or - to search in reverse.  ( F2 )
+
+CONTINUE LOCAL - : Reverse search.  ( F3 )
+
+CONTINUE LOCAL clr : Clears the search string.  After using this button, the next time
+                         you press either + or - you will be prompted for a new search 
+                         string.  ( F4 )
+
+COPY   :  Copies highlighted text to the clip board.  Text can be highlighted in the us-
+            ual ways.  Hold down on Shift button and use arrow keys.  Or hold down
+            on mouse button 1 and drag the pointer to highlight the text.
+
+
+/*********************** MENU ITEM SELECTIONS **********************/
+
+OPTIONS :
+About ...    :  Under Options on the main menu bar.  View the noxious Shareware
+                money grubbing beg screen.
+
+Import File :  Import any ASCII text file into the current .PDF file.  Theoretically, will
+               load in ANY SIZE ASCII file.  You will be presented with a Select File
+               box.  Select an ASCII file then press OK to accept or CANCEL to quit.
+               If the file can NOT be loaded into one record it will be loaded into as 
+               many records as needed - as long as there is enough space left in the
+               .PDF file.  Trying to load a file that is NOT ASCII text may get un-
+               predictable results!
+
+ 
+SETTINGS :
+
+Toggle Word Wrap :  Will turn the word wrap feature on or off.  The title bar of the
+                       main window will say what the current state is.  With word wrap
+                       on you won't need to use the horizontal scroll bar.  This is lo-
+                       cated under the Options selection on the main menu bar.
+
+Prompt For Record Name :  Prompt for a record name instead of using default name 
+                              when importing ( through menu or drag + drop ) an ASCII 
+                              file into the current .PDF file.
+
+Default Colors :  Select EDIT, ADD, SEARCH, or VIEW to place a check mark and force
+                   the use the DEFAULT colors.
+
+Set Modules :  This will open up a whole new screen that is used to set which .PDF
+                 modules you want to be included in a search or to create a new .PDF
+                 file.  See details below under SET MODULES.   
+
+
+HELP :  Brings up a scrollable text box to view the PADHD.DOC file - if it is located
+         in the same directory as PADHD.
+
+/*********************** SET MODULES SCREEN *************************/
+
+OK :  Accept and Save all changes made.
+
+CANCEL :  Cancel and do NOT accept changes.
+
+ADD :  This presents you with a file selection box.  If you have several .PDF files -
+        any where on the system - select them and add to the search list.  A MAXIMUM
+        of 25 .PDF files can be on the search list.
+
+REMOVE :  Removes .PDF file from search list.  It does NOT erase or affect the file
+             itself.
+
+NEW :  Create a new .PDF file and give it a name.  This is the ONLY way to start a
+        new .PDF data file in the program.
+
+ATTENTION ------ DOUBLE CLICKING on any entry will put it at the top of the search
+list.  This will make it the default .PDF file.  The default .PDF file will be the one
+listed when the program first starts.  Of course, if you only have one .PDF file in the
+search list this is a moot point.  All changes become effective after selecting OK -
+which will save all changes and exit this screen.     
+
+/*********************** BUG FIXES + NEW STUFF ***********************/
+
+   Version ( 1.0b ) fixes several bugs that were in earlier versions.  Early versions
+would quit and close if you tried to import an ASCII file that was READ ONLY.  This
+has been corrected so that PADHD will now import files with the read only attribute 
+set on.
+
+   PADHD also would quit and close down if you attempted to PASTE from an EDIT
+or ADD window when the clipboard was EMPTY.  Now PADHD will not shutdown if the
+clipboard is empty and you try to paste.  It will, instead, notify you with a dialog box
+that the clipboard is empty. 
+
+   This fixes a bug so that the TAB will work correctly in an Edit of Add box.
+
+   The ALT-G hot key now works correctly in a View box.
+
+   DRAG AND DROP SUPPORT is now included as well as ASSOCIATION.  You can
+now drop a .PDF object from a DRIVES folder on the PADHD icon.  HOWEVER, if you
+try to drop a COPY of a .PDF object on the PADHD icon it may not work.  So if you
+want to have a bunch of .PDF objects in a folder or on the desktop make SHADOWS
+( CTRL+SHIFT ) of the originals from the drives folder.  The originals or shadows of 
+objects can be dropped on or associated with PADHD in the normal OS/2 way.  To 
+associate .PDF files to PADHD open the settings menu for PADHD , tab to the 
+associations page, and at the bottom add in *.PDF in the New name field.
+
+               ********       NEW for VERSION 1.1     ********
+
+   ASCII text files of ANY size can also be Dropped on the MAIN screen list box.  The
+file will automatically loaded into as many records as needed ( if there is room ) and
+named appropriately.  You can also Drag the currently highlighted record from the MAIN
+screen list box.  It can be dragged to any place that an ASCII file can be dragged to -
+such as a word processor, printer, or viewer.  If you drop it on the DESKTOP it will
+create a file named TEMP.TXT which can renamed to anything you like that will have
+the currently selected record in it.  Any size ASCII file can also be imported into the
+current .PDF file using the menu selection Import File - under Options.  
+
+   Files ( less than 30,000 bytes ) can be dropped directly on an EDIT or ADD entry
+box while the record is open.  If there is room it will be inserted at the current 
+cursor location.  It acts just like the IMPORT button.
+
+   Files can be dragged OFF the EDIT, ADD, VIEW, OR SEARCH entry boxes directly
+while they are open.  If the file is dropped on the DESKTOP it will be named
+TEMP.TXT and will contain the current record.  
+
+   .PDF files can be dropped directly on the module search list ( set modules ) to add
+them to the list.  They CANNOT be dragged off the list.  Use Remove button to take 
+them off.
+
+   View, Edit, Add, and Search View windows CAN now be minimized.  They can be 
+retrieved through the window list.  Click on both right and left mouse buttons at the
+same time in an empty place on the desktop to bring up the window list.
+
+   FONTS and COLORS can be dragged and Dropped onto EDIT, VIEW, ADD, and 
+SEARCH box Multi Line Entry boxes.  However, not all font characteristics are sup-
+ported.  Italics, bold, underline, or other special characteristics may not work.  Only
+PRIMARY colors are supported.  These limitations seem to be built into the Multi Line
+Entry boxes.  If there is a work around for this I can't find it yet.  Either I eventually
+stumble on a way to work around this ( or I.B.M. 'fixes' this oversight ) or were stuck
+with this limitation.  Strangely enough, the single line entry boxes don't seem to have
+this limitation.  Anybody have any good suggestions?
+
+   EDIT, VIEW, ADD, and SEARCH windows can now be HIDDEN.  Click the mouse on
+the small box in the upper right hand corner of the window and it will hide it.  To re-
+trieve it, bring up the OS/2 window list and select it.  Hopefully, in the future they
+will be sizable - but to do so I will have to go to a tool bar type system which
+entails a major rewriting of the code.
+   
+   The current line number is now shown at the top of every EDIT, VIEW, ADD, or
+search box.  However, the line number is only updated when keys are released.  For
+example - If you hold down on the DOWN arrow key and scroll down through a record,
+the line number at the top of the screen won't be updated until you let up on the key.
+This was done to keep scrolling performance from degrading badly.  If set to update
+for any keystroke, the scrolling rate was atrocious.
+
+   The currently loaded .PDF modules name is listed at the bottom of the MAIN screen
+with the current number of records in that module.  The module name is also listed in
+the titlebar of any ADD, EDIT, VIEW, or SEARCH screen.
+
+   The ONLY way to create a NEW .PDF file is through the Set Modules menu selection
+on the MAIN MENU.  This is different than ver. 1.00x.  Select Set Modules on the MAIN
+screen menu bar, then press NEW on the Global Search list screen.  Type in a name
+for a new .PDF file and press OK.  File name MUST have the .PDF extention.
+
+/******************* PROBLEMS & BUGS & NOTES ************************/
+
+   A lot of work and a lot of extra code has gone into this release ( 1.1 ) and I have
+tested it for quite some time.  However, I am NOT I.B.M.  I don't have the resources to
+test extensively.  Be sure to back up ALL data before upgrading to this release.  I be-
+lieve this release to be bug free - but then I also thought Microsoft would continue to
+make OS/2 apps in 1991.  Please report any bugs you may find to either my mail ad-
+dress or to my GENIE address listed below.
+
+   One possible bug that has already been reported by one user is an incompatability with
+the installable file system HPFS386.  This is NOT the HPFS that ships with OS/2.
+Since I do not use or have access to HPFS386 I cannot personally confirm this.  The
+user says that when attempting to delete a record the ENTIRE record is deleted.   
+
+   I have raised the price of PADHD.  Starting January 1, 1995 it will cost $35.00 to
+help justify spending all these weekends and extra hours working on it.  All currently
+registered users are not affected since they get all updates free and the registration 
+code word stays the same.  Anyone who registers before that date still can do so for 
+$20.00.
+
+   Plans for future updates - not counting bug fixes - will hopefully include simple 
+Boolean searches, perhaps sizable windows and a tool bar, and any other good suggest-
+ions that may come from users.  HINT! HINT!
+
+/************************* ALMOST THE END *************************/
+
+   That's about it.  Sheeeew! I hate document files!
+
+   Registration is a paltry $20.00 if you mail your registration before January 1, 1995.
+AFTER DEC. 31, 1994 PADHD -- REGISTRATION IS $35.00.  Upon registration you'll 
+receive a postcard with the appropriate code to get rid of the ugly Shareware "About 
+PADHD" screen.  Upgrades or bug fixes will of course be posted on Several BBS's.  All
+current users of course can still use their same code words on this or ANY future 
+updates.  Suggestions for new features or comments may be sent to the address below 
+or posted on Genie to : G.ROBINSON13
+
+                             Gary L. Robinson
+                             600 Apt. D. Mumford Dr.
+                             Troy, OH 45373
+

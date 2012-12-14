@@ -1,0 +1,3 @@
+Change .PDF as the default file extention.
+Make a Save ALL to file button on the accumulative search screen.
+

@@ -1,0 +1,5 @@
+BCC -c -v -sm about.c add.c edit.c import.c padhd.c padxtra.c search.c
+TLINK /v /aa /Toe /c /LC:\BCOS2\LIB c02 padhd.obj about.obj add.obj import.obj edit.obj padxtra.obj search.obj, padhd, padhd,c2mt os2,
+BRCC -r padhd.rc
+RC padhd.res padhd.exe
+
